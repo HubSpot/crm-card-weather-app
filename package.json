@@ -6,8 +6,8 @@
   "scripts": {
     "deploy": "hs upload src serverless-demo && hs deploy serverless-demo/demo.functions",
     "dev": "hs watch src serverless-demo",
-    "lint": "eslint . && prettier --list-different 'packages/**/*.{js,json}'",
-    "prettier:write": "prettier --write 'packages/**/*.{js,json}'"
+    "lint": "eslint . && prettier --list-different 'src/**/*.{js,json}'",
+    "prettier:write": "prettier --write 'src/**/*.{js,json}'"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +21,7 @@
     "prettier": "^2.2.1"
   },
   "lint-staged": {
-    "src/**/*.{js,scss,css}": [
+    "src/**/*.{js,json,scss,css}": [
       "prettier -l",
       "eslint"
     ]

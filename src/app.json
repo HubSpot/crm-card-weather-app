@@ -3,8 +3,6 @@
   "logo": "path/to/image.png",
   "description": "",
   "scopes": ["contacts"],
-  "crmCards": [
-    "./weather-card.json"
-  ],
+  "crmCards": ["./weather-card.json"],
   "webhooks": []
 }
