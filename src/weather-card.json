@@ -1,5 +1,6 @@
 {
   "type": "crm-card",
+  "name": "weatherCard",
   "data": {
     "title": "Weather",
     "fetch": {
