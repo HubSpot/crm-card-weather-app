@@ -1,8 +1,16 @@
 {
-  "name": "Weather",
+  "name": "weather-card",
+  "label": "Weather",
   "logo": "path/to/image.png",
   "description": "",
   "scopes": ["contacts"],
-  "crmCards": ["./weather-card.json"],
-  "webhooks": []
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./weather-card.json"
+        }
+      ]
+    }
+  }
 }
