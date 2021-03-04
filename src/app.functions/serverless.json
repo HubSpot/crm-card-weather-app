@@ -1,9 +1,9 @@
 {
   "runtime": "nodejs12.x",
   "version": "1.0",
-  "crmCards": {
+  "crmCards": [{
     "name": "weatherCard",
     "file": "weather.js",
     "secrets": ["OPENWEATHER_API_KEY"]
-  }
+  }]
 }
