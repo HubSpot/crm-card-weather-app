@@ -1,7 +1,5 @@
 {
-  "name": "weather-card",
-  "label": "Weather",
-  "logo": "path/to/image.png",
+  "name": "Weather Card",
   "description": "",
   "scopes": ["contacts"],
   "extensions": {
