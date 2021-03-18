@@ -1,11 +1,11 @@
 {
-  "name": "serverless-demo",
+  "name": "hello-world-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "hs upload src serverless-demo && hs deploy serverless-demo/demo.functions",
-    "dev": "hs watch src serverless-demo",
+    "deploy": "hs upload src hello-world-app && hs functions deploy hello-world-app/app.functions",
+    "dev": "hs watch src hello-world-app",
     "lint": "eslint . && prettier --list-different 'src/**/*.{js,json}'",
     "prettier:write": "prettier --write 'src/**/*.{js,json}'"
   },
