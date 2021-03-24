@@ -40,7 +40,6 @@ exports.main = async (context = {}, sendResponse) => {
       high: `${Math.round(parseInt(temp_max, 10))}°`,
       low: `${Math.round(parseInt(temp_min, 10))}°`,
       weatherTypes: `${weatherTypes.join('and')}`,
-      raw: data,
     },
   ]);
 };
