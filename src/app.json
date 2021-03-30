@@ -2,6 +2,7 @@
   "name": "Weather Card",
   "description": "",
   "scopes": ["contacts"],
+  "private": true,
   "extensions": {
     "crm": {
       "cards": [
