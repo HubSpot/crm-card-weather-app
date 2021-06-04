@@ -30,16 +30,18 @@ exports.main = async (context = {}, sendResponse) => {
   } = queryResponse;
   const weatherTypes = weather.map(w => w.main);
 
-  sendResponse([
-    {
-      objectId: 1,
-      title: `Local weather for ${name}`,
-      temperature: `${Math.round(parseInt(temp, 10))}°`,
-      feelsLike: `${Math.round(parseInt(feels_like, 10))}°`,
-      humidity: `${Math.round(parseInt(humidity, 10))}%`,
-      high: `${Math.round(parseInt(temp_max, 10))}°`,
-      low: `${Math.round(parseInt(temp_min, 10))}°`,
-      weatherTypes: `${weatherTypes.join('and')}`,
-    },
-  ]);
+  sendResponse({
+    results: [
+      {
+        objectId: 1,
+        title: `Local weather for ${name}`,
+        temperature: `${Math.round(parseInt(temp, 10))}°`,
+        feelsLike: `${Math.round(parseInt(feels_like, 10))}°`,
+        humidity: `${Math.round(parseInt(humidity, 10))}%`,
+        high: `${Math.round(parseInt(temp_max, 10))}°`,
+        low: `${Math.round(parseInt(temp_min, 10))}°`,
+        weatherTypes: `${weatherTypes.join('and')}`,
+      },
+    ],
+  });
 };
