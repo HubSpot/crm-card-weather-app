@@ -11,10 +11,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@hubspot/cms-cli": "^2.2.2"
-  },
   "devDependencies": {
+    "@hubspot/cli": "^3.0.6",
     "eslint": "^7.17.0",
     "husky": "^4.3.7",
     "lint-staged": "^10.5.3",
